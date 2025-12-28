@@ -7,6 +7,13 @@
 [functions]
   # Netlify Forms will handle form submissions
 
+# Redirect www to non-www
+[[redirects]]
+  from = "https://www.heenamenghi.com/*"
+  to = "https://heenamenghi.com/:splat"
+  status = 301
+  force = true
+
 # Form notifications configuration
 # After deploying to Netlify:
 # 1. Go to Site settings > Forms
