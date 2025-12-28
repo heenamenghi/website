@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+
+[[plugins]]
+  package = "@netlify/plugin-emails"
+
+[functions]
+  # Netlify Forms will handle form submissions
+
+# Form notifications configuration
+# After deploying to Netlify:
+# 1. Go to Site settings > Forms
+# 2. Click on "Form notifications"
+# 3. Add email notification to: heenamenghi28@gmail.com

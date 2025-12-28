@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Heena Menghi team. Explore career opportunities in financial advisory, helping Canadians achieve financial freedom.">
+    <title>Careers - Heena Menghi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">HM</div>
+                <span class="logo-text">Heena Menghi</span>
+            </a>
+            <nav id="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="careers.html" class="active">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container" style="text-align: center;">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem; font-family: 'Playfair Display', Georgia, serif; color: var(--champagne-gold);">
+                DISCOVER A CAREER THAT MATTERS
+            </h1>
+            <p style="font-size: 1.5rem; font-family: Georgia, serif; color: var(--text-primary); max-width: 800px; margin: 0 auto;">
+                Build Your Future While Helping Others Build Theirs
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">
+                WHY CHOOSE A CAREER IN FINANCIAL SERVICES?
+            </h2>
+
+            <div class="grid grid-2" style="gap: 2.5rem; max-width: 1000px; margin: 0 auto;">
+                <div class="card" style="text-align: left;">
+                    <h3 style="color: var(--champagne-gold); font-size: 1.5rem; margin-bottom: 1rem;">Become a Business Owner</h3>
+                    <p>Build your own practice as a financial professional</p>
+                </div>
+
+                <div class="card" style="text-align: left;">
+                    <h3 style="color: var(--champagne-gold); font-size: 1.5rem; margin-bottom: 1rem;">Purpose-Driven Work</h3>
+                    <p>Create a business rooted in strong values and real impact</p>
+                </div>
+
+                <div class="card" style="text-align: left;">
+                    <h3 style="color: var(--champagne-gold); font-size: 1.5rem; margin-bottom: 1rem;">Freedom & Flexibility</h3>
+                    <p>Take control of your time and design your ideal lifestyle</p>
+                </div>
+
+                <div class="card" style="text-align: left;">
+                    <h3 style="color: var(--champagne-gold); font-size: 1.5rem; margin-bottom: 1rem;">Unlimited Income Potential</h3>
+                    <p>Your growth and earnings are based on your effort and vision</p>
+                </div>
+
+                <div class="card" style="text-align: left;">
+                    <h3 style="color: var(--champagne-gold); font-size: 1.5rem; margin-bottom: 1rem;">Make a Real Difference</h3>
+                    <p>Help Canadians protect, grow, and secure their financial future</p>
+                </div>
+
+                <div class="card" style="text-align: left;">
+                    <h3 style="color: var(--champagne-gold); font-size: 1.5rem; margin-bottom: 1rem;">Create Lasting Impact</h3>
+                    <p>Change lives while building a meaningful legacy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="bg-mint">
+        <div class="container" style="text-align: center; max-width: 900px; margin: 0 auto;">
+            <h2 style="font-size: 2.5rem; color: var(--champagne-gold); margin-bottom: 1.5rem; font-family: 'Playfair Display', Georgia, serif;">
+                THIS IS MORE THAN A JOB
+            </h2>
+            <p style="font-size: 1.3rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--text-primary);">
+                It's an opportunity to own your future, grow personally and professionally, and do work that truly matters.
+            </p>
+            <p style="font-size: 1.4rem; font-weight: 600; color: var(--champagne-gold); font-family: Georgia, serif;">
+                Build your business. Build your income. Make a difference.
+            </p>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section>
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 1rem;">
+                📞 Ready to learn more? Let's connect.
+            </h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem; color: var(--text-secondary);">
+                Submit your information and resume below, and we'll be in touch shortly.
+            </p>
+
+            <form id="careerForm" name="careers" method="POST" data-netlify="true" enctype="multipart/form-data">
+                <input type="hidden" name="form-name" value="careers">
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required minlength="2" placeholder="First Name *">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required minlength="2" placeholder="Last Name *">
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="Email Address *">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[\(\)\d\s\-\+\.]+" placeholder="Phone *">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Attach Your Resume</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf" required style="padding: 0.75rem; background: var(--bg-card); border: 2px solid var(--slate-gray); border-radius: 0.5rem; color: var(--text-primary); width: 100%; font-size: 1rem;">
+                    <small style="color: var(--text-muted); font-size: 0.9rem; display: block; margin-top: 0.5rem;">
+                        PDF format, maximum 5MB
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required rows="5" placeholder="Your Message *"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-secondary" style="padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 2rem;">
+                    Submit Form
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <span class="footer-brand">Heena Menghi</span> © 2025
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://instagram.com/heenamenghi" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Career form validation
+        const careerForm = document.getElementById('careerForm');
+        const firstNameInput = document.getElementById('firstName');
+        const lastNameInput = document.getElementById('lastName');
+        const emailInput = document.getElementById('email');
+        const phoneInput = document.getElementById('phone');
+        const resumeInput = document.getElementById('resume');
+        const messageInput = document.getElementById('message');
+
+        careerForm.addEventListener('submit', function(e) {
+            let isValid = true;
+
+            // Validate first name
+            if (firstNameInput.value.trim().length < 2) {
+                firstNameInput.setCustomValidity('Please enter a valid first name (at least 2 characters)');
+                isValid = false;
+            } else {
+                firstNameInput.setCustomValidity('');
+            }
+
+            // Validate last name
+            if (lastNameInput.value.trim().length < 2) {
+                lastNameInput.setCustomValidity('Please enter a valid last name (at least 2 characters)');
+                isValid = false;
+            } else {
+                lastNameInput.setCustomValidity('');
+            }
+
+            // Validate email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(emailInput.value)) {
+                emailInput.setCustomValidity('Please enter a valid email address');
+                isValid = false;
+            } else {
+                emailInput.setCustomValidity('');
+            }
+
+            // Validate phone
+            if (!phoneInput.value || !/^[\(\)\d\s\-\+\.]+$/.test(phoneInput.value)) {
+                phoneInput.setCustomValidity('Please enter a valid phone number');
+                isValid = false;
+            } else {
+                phoneInput.setCustomValidity('');
+            }
+
+            // Validate message
+            if (messageInput.value.trim().length < 10) {
+                messageInput.setCustomValidity('Please enter a message (at least 10 characters)');
+                isValid = false;
+            } else {
+                messageInput.setCustomValidity('');
+            }
+
+            // Validate resume file
+            const file = resumeInput.files[0];
+            if (file) {
+                const maxSize = 5 * 1024 * 1024; // 5MB in bytes
+                if (file.size > maxSize) {
+                    e.preventDefault();
+                    alert('Resume file size must be less than 5MB. Please upload a smaller file.');
+                    return false;
+                }
+
+                if (file.type !== 'application/pdf') {
+                    e.preventDefault();
+                    alert('Please upload your resume in PDF format.');
+                    return false;
+                }
+            }
+
+            if (!isValid) {
+                e.preventDefault();
+            }
+        });
+
+        // Clear custom validation on input
+        [firstNameInput, lastNameInput, emailInput, phoneInput, messageInput].forEach(input => {
+            input.addEventListener('input', function() {
+                this.setCustomValidity('');
+            });
+        });
+    </script>
+</body>
+</html>
