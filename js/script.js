@@ -2,7 +2,27 @@
 function toggleMenu() {
     const nav = document.getElementById('nav');
     nav.classList.toggle('mobile-open');
+
+    // Change hamburger to X when open
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    if (nav.classList.contains('mobile-open')) {
+        toggle.innerHTML = '✕';
+    } else {
+        toggle.innerHTML = '☰';
+    }
 }
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        const nav = document.getElementById('nav');
+        const toggle = document.querySelector('.mobile-menu-toggle');
+        if (nav.classList.contains('mobile-open')) {
+            nav.classList.remove('mobile-open');
+            toggle.innerHTML = '☰';
+        }
+    });
+});
 
 // Contact Form Validation
 if (document.getElementById('contactForm')) {

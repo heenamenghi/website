@@ -910,12 +910,23 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+
   nav ul {
     display: none;
   }
 
   .mobile-menu-toggle {
     display: block;
+    z-index: 1000;
+  }
+
+  nav.mobile-open .mobile-menu-toggle {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
   }
 
   nav.mobile-open ul {
@@ -926,11 +937,37 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--charcoal);
+    background-color: rgba(26, 31, 46, 0.98);
+    backdrop-filter: blur(10px);
     justify-content: center;
     align-items: center;
     z-index: 999;
     gap: 2rem;
+  }
+
+  nav.mobile-open ul li {
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+  }
+
+  nav.mobile-open ul li:nth-child(1) { animation-delay: 0.1s; }
+  nav.mobile-open ul li:nth-child(2) { animation-delay: 0.2s; }
+  nav.mobile-open ul li:nth-child(3) { animation-delay: 0.3s; }
+  nav.mobile-open ul li:nth-child(4) { animation-delay: 0.4s; }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  nav ul a {
+    font-size: 1.5rem;
   }
 
   .hero-content {
@@ -943,8 +980,36 @@ footer {
     font-size: 2.5rem;
   }
 
+  .hero-text .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-text .description {
+    font-size: 1rem;
+  }
+
   .hero-image {
     height: 350px;
+  }
+
+  section {
+    padding: 4rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 1.1rem;
   }
 
   .contact-grid {
@@ -956,8 +1021,10 @@ footer {
     text-align: center;
   }
 
-  .section-title {
-    font-size: 2.5rem;
+  .footer-links {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
   }
 
   .job-header {
@@ -965,7 +1032,44 @@ footer {
   }
 
   form {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+  }
+
+  .card {
     padding: 2rem;
+  }
+
+  .testimonial {
+    padding: 2rem 1.5rem;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .logo-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+  }
+
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
   }
 }
 

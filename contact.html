@@ -111,6 +111,25 @@
                     <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..."></textarea>
                 </div>
 
+                <div class="form-group">
+                    <label style="margin-bottom: 1rem; text-transform: none; font-size: 1rem; line-height: 1.6;">
+                        Marketing Consent *
+                    </label>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
+                        I provide my consent to receive ongoing updates, informational content, and marketing communications and understand that I may withdraw my consent at any time.
+                    </p>
+                    <div style="display: flex; gap: 2rem; align-items: center;">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; text-transform: none; font-weight: normal; font-size: 1rem;">
+                            <input type="radio" name="marketingConsent" value="Yes" required style="width: auto; cursor: pointer; accent-color: var(--champagne-gold);">
+                            <span>☐ Yes</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; text-transform: none; font-weight: normal; font-size: 1rem;">
+                            <input type="radio" name="marketingConsent" value="No" required style="width: auto; cursor: pointer; accent-color: var(--champagne-gold);">
+                            <span>☐ No</span>
+                        </label>
+                    </div>
+                </div>
+
                 <button type="submit" class="btn btn-secondary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
                     Submit
                 </button>
