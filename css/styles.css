@@ -924,38 +924,50 @@ footer {
   }
 
   nav.mobile-open .mobile-menu-toggle {
-    position: fixed;
-    top: 1.5rem;
-    right: 1.5rem;
+    position: relative;
   }
 
   nav.mobile-open ul {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0;
+    top: 80px;
     left: 0;
     right: 0;
-    bottom: 0;
     background-color: rgba(26, 31, 46, 0.98);
     backdrop-filter: blur(10px);
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     z-index: 999;
-    gap: 2.5rem;
-    overflow-y: auto;
-    padding: 8rem 2rem 4rem;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    border-bottom: 2px solid var(--champagne-gold);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.4s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   nav.mobile-open ul li {
     opacity: 0;
     animation: fadeInUp 0.5s forwards;
+    width: 100%;
+    text-align: center;
   }
 
-  nav.mobile-open ul li:nth-child(1) { animation-delay: 0.1s; }
-  nav.mobile-open ul li:nth-child(2) { animation-delay: 0.2s; }
-  nav.mobile-open ul li:nth-child(3) { animation-delay: 0.3s; }
-  nav.mobile-open ul li:nth-child(4) { animation-delay: 0.4s; }
+  nav.mobile-open ul li:nth-child(1) { animation-delay: 0.15s; }
+  nav.mobile-open ul li:nth-child(2) { animation-delay: 0.25s; }
+  nav.mobile-open ul li:nth-child(3) { animation-delay: 0.35s; }
+  nav.mobile-open ul li:nth-child(4) { animation-delay: 0.45s; }
 
   @keyframes fadeInUp {
     from {
@@ -969,7 +981,15 @@ footer {
   }
 
   nav ul a {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    display: block;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+
+  nav ul a:hover {
+    background: rgba(212, 175, 55, 0.1);
   }
 
   .hero-content {
