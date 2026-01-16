@@ -939,12 +939,12 @@ footer {
     bottom: 0;
     background-color: rgba(26, 31, 46, 0.98);
     backdrop-filter: blur(10px);
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     z-index: 999;
-    gap: 2rem;
+    gap: 2.5rem;
     overflow-y: auto;
-    padding: 5rem 2rem;
+    padding: 8rem 2rem 4rem;
   }
 
   nav.mobile-open ul li {
